@@ -66,6 +66,8 @@ $Soft-red: hsl(5, 85%, 63%);
 }
 @media screen and (max-width: 768px) {
     .content{
+        width: 90%;
+        margin: 0 auto;
         height: 100vh;
     }
 .contentHome{

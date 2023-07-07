@@ -131,6 +131,8 @@ $Soft-red: hsl(5, 85%, 63%);
 
 
     .homeContent{
+        width: 90%;
+        margin: 0 auto;
         flex-wrap: wrap;
         gap: 30px;
         .leftContent{
