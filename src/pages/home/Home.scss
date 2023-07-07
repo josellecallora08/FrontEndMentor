@@ -14,8 +14,9 @@ $Soft-red: hsl(5, 85%, 63%);
 .homeContent{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    width: 80%;
+    gap: 30px;
+    width:100%;
+    max-width: 1440px;
     margin: 0 auto;
     margin-top: 30px;
     
@@ -25,7 +26,6 @@ $Soft-red: hsl(5, 85%, 63%);
         .cover{
             object-fit: cover;
             width: 100%;
-            max-width: 1050px;
             .mobile_wpaper{
                 display: none;
             }
@@ -131,6 +131,7 @@ $Soft-red: hsl(5, 85%, 63%);
 
 
     .homeContent{
+        flex-wrap: wrap;
         gap: 30px;
         .leftContent{
             .cover{
