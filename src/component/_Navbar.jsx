@@ -41,7 +41,7 @@ export const Home = () => {
           </button>
           <ul>
             <li>
-              <Link to="/FrontendMentor">Home</Link>
+              <Link to="/FrontEndMentor">Home</Link>
             </li>
             <li>
               <Link to="/news">News</Link>

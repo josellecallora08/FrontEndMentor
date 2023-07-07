@@ -15,7 +15,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/FrontendMentor' exact Component={Home}/>
+          <Route path='/FrontEndMentor' exact Component={Home}/>
           <Route path='/news' Component={News}/>
           <Route path='/popular' Component={Popular}/>
           <Route path='/trending' Component={Trending}/>
