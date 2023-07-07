@@ -1,0 +1,185 @@
+// Variables
+$Off-white: hsl(36, 100%, 99%);
+$Grayish-blue: hsl(233, 8%, 79%);
+$Dark-grayish-blue: hsl(236, 13%, 42%);
+$Very-dark-blue: hsl(240, 100%, 5%);
+$Soft-orange: hsl(35, 77%, 62%);
+$Soft-red: hsl(5, 85%, 63%);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.homeContent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+    .leftContent{
+        display: flex;
+        flex-direction: column;
+        .cover{
+            object-fit: cover;
+            width: 100%;
+            max-width: 1050px;
+            .mobile_wpaper{
+                display: none;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .details{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1000px;
+            margin-top: 30px;
+            
+            .title{
+                width: 40%;
+                h1{
+                    width: 100%;
+                    font-size: 70px;
+                    text-align: left;
+                    font-weight: 700;
+                }
+            }
+            .left-rightContent{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 10px;
+
+                .info{
+                    display: flex;
+                    justify-content: center;
+                    text-align: start;
+                    height: 100%;
+                    font-size: 20px;
+                    color: $Dark-grayish-blue
+                }
+                .button{
+                    text-align: start;
+
+                    button{
+                        all: unset;
+                        cursor: pointer;
+                        padding: 15px 25px;
+                        border: 1px solid transparent;
+                        background-color: $Soft-red;
+                        color: $Off-white;
+                        letter-spacing: 5px;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        transition: 150ms ease-in-out;
+                        &:hover{
+                            background-color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rightContent{
+        width: 100%;
+        max-width: 400px;
+        display: grid;
+        grid-template-rows: 100px 1fr 1fr 1fr;
+        padding: 15px 20px;
+        background-color: $Very-dark-blue;
+
+        .right-rightContent{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: start;
+            
+            h1{
+                font-size: 80px;
+                color: $Soft-orange;
+            }
+            h2{
+                font-size: 30px;
+                margin-bottom: 10px;
+                color: $Off-white;
+                text-align: start;
+                cursor: pointer;
+                &:hover{
+                    color: $Soft-orange;
+                }
+            }
+            p{
+                color: $Grayish-blue;
+            }
+        }
+        .right-rightContent:nth-child(3){
+            border-bottom: 1px solid $Grayish-blue;
+            border-top: 1px solid $Grayish-blue;
+            width: 100%;
+
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .homeContent{
+        gap: 30px;
+        .leftContent{
+            .cover{
+                .mobile_wpaper{
+                    display: block;
+                }
+                .web_wpaper{
+                    display: none;
+                }
+            }
+            .details{
+                display: flex;
+                flex-direction: column;
+                .title{
+                    width: 100%;
+                    h1{
+                        font-size: 60px;
+                    }
+                }
+                .left-rightContent{
+                    padding: 0;
+                    width: 100%;
+                    .info{
+                        p{
+                            font-size: 20px;       
+                            padding: 20px 0;                     
+                        }
+                    }
+                }
+            }
+        }
+        .rightContent{
+            all: unset;
+            width: 100%;
+            padding: 15px 20px;
+            background-color: $Very-dark-blue;
+            .right-rightContent:nth-child(1){
+                padding: 0;
+            }
+            .right-rightContent{
+                padding: 30px 0;
+                h1{
+                    font-size: 40px;
+                }
+                h2{
+                    font-size: 20px;
+                }
+
+            }
+        }
+    }
+}
